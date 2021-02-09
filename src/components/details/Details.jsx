@@ -1,11 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Details = () => {
+const Details = ({ name, image, species, status }) => {
   return (
     <div>
-      <h1>The Details Component</h1>
+      <p>{name}</p>
+      <img src={image} />
+      <p>Species: {species}</p>
+      <p>Status: {status}</p>
     </div>
   );
+};
+
+Details.propTypes = {
+  name: PropTypes.string,
+  image: PropTypes.string,
+  species: PropTypes.string,
+  status: PropTypes.string
 };
 
 export default Details;
