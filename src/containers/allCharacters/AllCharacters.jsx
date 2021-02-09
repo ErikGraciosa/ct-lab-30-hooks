@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Character from '../../components/character/Character';
 import { getAllCharacters } from '../../services/rickAndMortyApi';
+import styles from './AllCharacters.css';
 
 const AllCharacters = () => {
   const [loading, setLoading] = useState(true); //initialize loading to true
@@ -14,18 +15,18 @@ const AllCharacters = () => {
       });
   }, []);
 
-  console.log(loading);
-  console.log(quotes);
-
   return (
-    <div>
-      <h1>Placeholder All Chars</h1>
-      <Character 
-        key="1"
-        name="Steve"
-        image="picture"
-        id="1"/>
-    </div>
+    <>
+      <div className={styles.AllCharacters}>
+        {quotes.map(quote => 
+          <Character 
+            key={quote.id} 
+            name={quote.name}
+            image={quote.image}
+            id={quote.id} />
+        )}
+      </div>
+    </>
   );
 };
 
