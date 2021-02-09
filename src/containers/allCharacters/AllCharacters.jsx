@@ -15,6 +15,7 @@ const AllCharacters = () => {
       });
   }, []);
 
+  if(loading) return <h1>Rick and Morty quotes loading</h1>;
   return (
     <>
       <div className={styles.AllCharacters}>

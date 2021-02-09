@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import Header from '../header/Header';
 import AllCharacters from '../../containers/allCharacters/AllCharacters';
-import Details from '../../containers/details/Details';
+import OneCharacterDetails from '../../containers/oneCharacterDetails/OneCharacterDetails';
 
 export default function App() {
   return (
@@ -22,7 +22,7 @@ export default function App() {
           <Route 
             path="/:details" 
             exact
-            component={Details} 
+            component={OneCharacterDetails} 
           />
         </Switch>
       </Router>
