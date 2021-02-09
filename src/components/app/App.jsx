@@ -5,8 +5,8 @@ import {
   Switch,
 } from 'react-router-dom';
 import Header from '../header/Header';
-import AllCharacters from '../allCharacters/AllCharacters';
-import Details from '../details/Details';
+import AllCharacters from '../../containers/allCharacters/AllCharacters';
+import Details from '../../containers/details/Details';
 
 export default function App() {
   return (
