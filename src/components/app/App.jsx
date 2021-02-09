@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import Header from '../header/Header';
 import AllCharacters from '../../containers/allCharacters/AllCharacters';
-import OneCharacterDetails from '../../containers/oneCharacterDetails/OneCharacterDetails';
+import OneCharacterDetails from '../../containers/oneCharacterDetails/OneCharacterDetails'; // eslint-disable-line
 
 export default function App() {
   return (
